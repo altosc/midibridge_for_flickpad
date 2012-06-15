@@ -1,10 +1,6 @@
 midibridge_for_maxmsp
 =====================
-
-# ALT OSC
-## MIDI BRIDGE for Max
-
-### release note
+### release note Ver.1.0.1
 - add OSC Recieve ON / OFF Toggle.
 - add Port Number changer.
 - add All MIDI channel changer.
