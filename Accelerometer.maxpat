@@ -28,34 +28,6 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-679",
-					"maxclass" : "fpic",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 106.0, 97.0, 476.5, 513.0 ],
-					"pic" : "figure.png",
-					"presentation" : 1,
-					"presentation_rect" : [ 106.0, 97.0, 476.5, 513.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "pic",
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"hidden" : 1,
-					"id" : "obj-680",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 65.0, 257.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "",
 					"hint" : "MIDI OUT",
 					"id" : "obj-5",
@@ -118,7 +90,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u910009226"
+					"varname" : "u493001757"
 				}
 
 			}
@@ -415,16 +387,16 @@
 ,
 					"patching_rect" : [ 47.0, -55.0, 140.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"tags" : "",
-						"fontface" : 0,
-						"fontsize" : 12.0,
 						"default_fontface" : 0,
-						"globalpatchername" : "",
 						"digest" : "",
 						"default_fontname" : "Arial",
+						"fontname" : "Arial",
+						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"fontname" : "Arial"
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0
 					}
 ,
 					"text" : "p acceleroLines"
@@ -640,16 +612,16 @@
 ,
 					"patching_rect" : [ 206.75, -51.0, 99.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"tags" : "",
-						"fontface" : 0,
-						"fontsize" : 12.0,
 						"default_fontface" : 0,
-						"globalpatchername" : "",
 						"digest" : "",
 						"default_fontname" : "Arial",
+						"fontname" : "Arial",
+						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"fontname" : "Arial"
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0
 					}
 ,
 					"text" : "p acceleroScale"
@@ -1591,15 +1563,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-679", 0 ],
-					"disabled" : 0,
-					"hidden" : 1,
-					"source" : [ "obj-680", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1619,8 +1582,8 @@
  ],
 		"parameters" : 		{
 			"obj-1621" : [ "live.button[46]", "live.button", 0 ],
-			"obj-1623" : [ "live.button[48]", "live.button", 0 ],
-			"obj-1622" : [ "live.button[47]", "live.button", 0 ]
+			"obj-1622" : [ "live.button[47]", "live.button", 0 ],
+			"obj-1623" : [ "live.button[48]", "live.button", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1628,13 +1591,6 @@
 				"bootpath" : "/Users/terada/Desktop/MIDI Bridge",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "figure.png",
-				"bootpath" : "/Users/terada/Desktop/MIDI Bridge",
-				"patcherrelativepath" : "",
-				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
