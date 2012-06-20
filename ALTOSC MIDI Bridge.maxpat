@@ -7,7 +7,7 @@
 			"revision" : 5
 		}
 ,
-		"rect" : [ 431.0, 214.0, 1454.0, 1016.0 ],
+		"rect" : [ 365.0, 137.0, 1489.0, 1202.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -27,6 +27,35 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 717.0, 445.5, 112.0, 20.0 ],
+					"text" : "loadmess greedy 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"hidden" : 1,
+					"id" : "obj-12",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 739.5, 502.0, 79.0, 18.0 ],
+					"text" : "clientwindow"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -73,8 +102,8 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-25",
-					"ignoreclick" : 1,
 					"maxclass" : "bpatcher",
 					"name" : "Accelerometer.maxpat",
 					"numinlets" : 3,
@@ -97,8 +126,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1086.0, 691.5, 217.0, 18.0 ],
-					"presentation_rect" : [ 1161.0, 559.5, 0.0, 0.0 ],
+					"patching_rect" : [ 383.0, -79.5, 217.0, 18.0 ],
 					"text" : "script sendbox Accelerometer hidden $1"
 				}
 
@@ -113,7 +141,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1086.0, 669.5, 32.5, 20.0 ],
+					"patching_rect" : [ 383.0, -101.5, 32.5, 20.0 ],
 					"text" : "!= 2"
 				}
 
@@ -128,7 +156,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 712.0, 637.0, 35.0, 20.0 ],
+					"patching_rect" : [ 9.0, -134.0, 35.0, 20.0 ],
 					"text" : "r tab"
 				}
 
@@ -430,7 +458,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 712.0, 691.5, 179.0, 18.0 ],
+					"patching_rect" : [ 9.0, -79.5, 179.0, 18.0 ],
 					"text" : "script sendbox Amode hidden $1"
 				}
 
@@ -445,7 +473,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 901.0, 691.5, 179.0, 18.0 ],
+					"patching_rect" : [ 198.0, -79.5, 179.0, 18.0 ],
 					"text" : "script sendbox Bmode hidden $1"
 				}
 
@@ -460,7 +488,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 712.0, 716.5, 69.0, 20.0 ],
+					"patching_rect" : [ 9.0, -54.5, 69.0, 20.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -476,7 +504,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 901.0, 669.5, 32.5, 20.0 ],
+					"patching_rect" : [ 198.0, -101.5, 32.5, 20.0 ],
 					"text" : "!= 1"
 				}
 
@@ -491,7 +519,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 712.0, 669.5, 32.5, 20.0 ],
+					"patching_rect" : [ 9.0, -101.5, 32.5, 20.0 ],
 					"text" : "!= 0"
 				}
 
@@ -515,7 +543,6 @@
 , 			{
 				"box" : 				{
 					"clickthrough" : 1,
-					"hidden" : 1,
 					"id" : "obj-37",
 					"maxclass" : "bpatcher",
 					"name" : "Amode.maxpat",
@@ -556,7 +583,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1076.0, 284.0, 72.0, 20.0 ],
+					"patching_rect" : [ 853.0, -17.0, 72.0, 20.0 ],
 					"text" : "loadmess 3"
 				}
 
@@ -571,9 +598,10 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 853.0, 29.5, 44.0, 18.0 ],
+					"patching_rect" : [ 853.0, 79.5, 44.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 468.5, 33.5, 44.0, 18.0 ]
+					"presentation_rect" : [ 468.5, 33.5, 44.0, 18.0 ],
+					"varname" : "midi_port"
 				}
 
 			}
@@ -587,8 +615,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1220.0, 78.0, 69.0, 20.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "nozoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 431, 214, 1885, 1230, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+					"patching_rect" : [ 617.0, -27.0, 69.0, 20.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "nozoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 365, 137, 1854, 1339, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
 
@@ -603,7 +631,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1127.0, 78.0, 86.0, 18.0 ],
+					"patching_rect" : [ 663.0, -57.5, 86.0, 18.0 ],
 					"text" : "savewindow 1"
 				}
 
@@ -619,7 +647,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1244.0, 24.0, 119.0, 46.0 ],
+					"patching_rect" : [ 631.5, -106.5, 119.0, 46.0 ],
 					"text" : "window flags grow, window flags zoom, window exec"
 				}
 
@@ -635,7 +663,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1099.0, 24.0, 132.0, 46.0 ],
+					"patching_rect" : [ 617.0, -158.0, 132.0, 46.0 ],
 					"text" : "window flags grow, window flags nozoom, window exec"
 				}
 
@@ -650,7 +678,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 973.0, 82.5, 60.0, 25.0 ],
+					"patching_rect" : [ 937.5, 459.0, 60.0, 25.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 580.5, 95.0, 60.0, 25.0 ],
 					"text" : "OPEN"
@@ -667,7 +695,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 913.0, 82.5, 60.0, 25.0 ],
+					"patching_rect" : [ 837.5, 459.0, 60.0, 25.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 520.5, 95.0, 60.0, 25.0 ],
 					"text" : "SAVE"
@@ -682,7 +710,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 771.0, 69.5, 48.0, 18.0 ],
+					"patching_rect" : [ 795.0, 379.0, 48.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 386.5, 95.0, 48.0, 18.0 ],
 					"text" : "Presets"
@@ -696,7 +724,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 878.0, 9.5, 20.0, 20.0 ],
+					"patching_rect" : [ 878.0, 59.5, 20.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 488.0, 12.5, 20.0, 20.0 ]
 				}
@@ -710,7 +738,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 771.0, 9.5, 73.0, 18.0 ],
+					"patching_rect" : [ 771.0, 59.5, 73.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 386.5, 13.5, 73.0, 18.0 ],
 					"text" : "OSC Receive"
@@ -725,9 +753,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 853.0, 9.5, 18.0, 18.0 ],
+					"patching_rect" : [ 853.0, 59.5, 18.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 468.5, 13.5, 18.0, 18.0 ]
+					"presentation_rect" : [ 468.5, 13.5, 18.0, 18.0 ],
+					"varname" : "osc_recieve"
 				}
 
 			}
@@ -741,7 +770,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1262.0, 440.0, 34.0, 20.0 ],
+					"patching_rect" : [ 872.0, 220.5, 34.0, 20.0 ],
 					"text" : "gate"
 				}
 
@@ -754,7 +783,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 771.0, 89.5, 72.0, 18.0 ],
+					"patching_rect" : [ 771.0, 139.5, 72.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 386.5, 71.5, 72.0, 18.0 ],
 					"text" : "MIDI Channel"
@@ -770,7 +799,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 853.0, 117.0, 63.0, 20.0 ],
+					"patching_rect" : [ 771.0, 201.0, 63.0, 20.0 ],
 					"text" : "s ch_num"
 				}
 
@@ -787,7 +816,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 853.0, 89.5, 36.0, 18.0 ],
+					"patching_rect" : [ 771.0, 171.5, 36.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 468.5, 71.5, 36.0, 18.0 ]
 				}
@@ -801,7 +830,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 771.0, 29.5, 39.0, 18.0 ],
+					"patching_rect" : [ 771.0, 79.5, 39.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 386.5, 33.5, 39.0, 18.0 ],
 					"text" : "PORT"
@@ -818,7 +847,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 899.0, 29.5, 99.0, 20.0 ],
+					"patching_rect" : [ 899.0, 79.5, 99.0, 20.0 ],
 					"text" : "loadmess 10001"
 				}
 
@@ -832,7 +861,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1262.0, 470.0, 41.0, 20.0 ],
+					"patching_rect" : [ 872.0, 250.5, 41.0, 20.0 ],
 					"text" : "s port"
 				}
 
@@ -847,7 +876,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1262.0, 390.0, 48.0, 18.0 ],
+					"patching_rect" : [ 887.0, 171.5, 48.0, 18.0 ],
 					"text" : "port $1"
 				}
 
@@ -862,7 +891,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1262.0, 410.0, 69.0, 20.0 ],
+					"patching_rect" : [ 887.0, 191.5, 69.0, 20.0 ],
 					"text" : "udpreceive"
 				}
 
@@ -876,20 +905,20 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1305.0, 117.0, 69.0, 20.0 ],
+					"patching_rect" : [ 275.0, -27.5, 69.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"database" : 0,
 						"overdrive" : 0,
-						"usesearchpath" : 0,
-						"searchformissingfiles" : 1,
-						"preffilename" : "Max 5 Preferences",
-						"extensions" : 1,
-						"noloadbangdefeating" : 0,
-						"midisupport" : 1,
-						"audiosupport" : 0,
 						"cantclosetoplevelpatchers" : 1,
+						"extensions" : 1,
+						"preffilename" : "Max 6 Preferences",
+						"noloadbangdefeating" : 0,
+						"database" : 0,
+						"statusvisible" : 1,
+						"searchformissingfiles" : 1,
 						"allwindowsactive" : 0,
-						"statusvisible" : 0
+						"midisupport" : 1,
+						"audiosupport" : 1,
+						"usesearchpath" : 0
 					}
 ,
 					"text" : "standalone"
@@ -905,7 +934,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1042.0, 105.5, 74.0, 20.0 ],
+					"patching_rect" : [ 960.0, 191.5, 74.0, 20.0 ],
 					"text" : "s MIDI-OUT"
 				}
 
@@ -920,7 +949,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1126.0, 334.0, 43.0, 18.0 ],
+					"patching_rect" : [ 912.5, 46.0, 43.0, 18.0 ],
 					"text" : "set $1"
 				}
 
@@ -935,7 +964,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1126.0, 314.0, 72.0, 20.0 ],
+					"patching_rect" : [ 912.5, 13.0, 72.0, 20.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -948,34 +977,19 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
-					"patching_rect" : [ 853.0, 69.5, 37.0, 20.0 ],
+					"patching_rect" : [ 853.0, 378.0, 37.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 468.5, 95.0, 37.0, 20.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "obj-76", "number", "int", 1, 5, "obj-120", "number", "int", 1, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "obj-22", "umenu", "int", 3, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 4, "obj-3", "textedit", "set", 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 4, "obj-3", "textedit", "set", 4, "obj-1632", "textedit", "set", 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 4, "<invalid>", "textedit", "set", 5, "obj-311", "number", "int", 1, 5, "obj-660", "toggle", "int", 1, 5, "obj-656", "number", "int", 10001 ]
+							"data" : [ 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "obj-76", "number", "int", 1, 5, "obj-120", "number", "int", 1, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "obj-22", "umenu", "int", 3, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 4, "obj-3", "textedit", "set", 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 4, "obj-3", "textedit", "set", 4, "<invalid>", "textedit", "set", 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 4, "<invalid>", "textedit", "set", 5, "obj-311", "number", "int", 1, 5, "obj-660", "toggle", "int", 1, 5, "obj-656", "number", "int", 10001 ]
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 2, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 3, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 4, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 5, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "obj-76", "number", "int", 2, 5, "obj-120", "number", "int", 2, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 6, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 7, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 8, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 9, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 10, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 11, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 12, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 13, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 14, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 15, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 16, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 17, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 18, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 19, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 20, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 21, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 22, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 23, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 24, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 25, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 26, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 27, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 28, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 29, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 30, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 31, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 32, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 33, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 34, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 35, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 36, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 37, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 38, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 39, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 40, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 41, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 42, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 43, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 44, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 45, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 46, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 47, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 48, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 49, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 50, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "obj-22", "umenu", "int", 3, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 51, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 52, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 53, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 54, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 55, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 56, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 57, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 58, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 59, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 60, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 61, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 62, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 63, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 64, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 65, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 66, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 67, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 68, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 69, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 70, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 71, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 72, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 73, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 74, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 75, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 76, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 78, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 79, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 80, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 81, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 4, "obj-3", "textedit", "set", 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 92, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 93, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 94, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 95, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 96, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 97, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 98, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 99, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 100, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 101, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 63, 5, "<invalid>", "number", "int", 102, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 63, 5, "<invalid>", "number", "int", 103, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 63, 5, "<invalid>", "number", "int", 104, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 4, "obj-3", "textedit", "set", 4, "obj-1632", "textedit", "set", 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 82, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 83, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 84, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 85, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 86, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 87, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 88, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 89, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 90, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 91, 5, "<invalid>", "number", "int", 1, 4, "<invalid>", "textedit", "set", 5, "obj-311", "number", "int", 1, 5, "obj-660", "toggle", "int", 1, 5, "obj-656", "number", "int", 10001 ]
+							"data" : [ 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 2, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 3, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 4, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 5, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "obj-76", "number", "int", 2, 5, "obj-120", "number", "int", 2, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 6, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 7, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 8, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 9, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 10, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 11, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 12, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 13, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 14, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 15, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 16, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 17, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 18, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 19, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 20, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 21, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 22, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 23, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 24, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 25, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 26, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 27, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 28, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 29, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 30, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 31, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 32, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 33, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 34, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 35, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 36, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 37, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 38, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 39, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 40, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 41, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 42, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 43, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 44, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 45, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 46, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 47, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 48, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 49, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 50, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "obj-22", "umenu", "int", 3, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 51, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 52, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 53, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 54, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 55, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 56, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 57, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 58, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 59, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 60, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 61, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 62, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 63, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 64, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 65, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 66, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 67, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 68, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 69, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 70, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 71, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 72, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 73, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 74, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 75, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 76, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 78, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 79, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 80, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 81, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 4, "obj-3", "textedit", "set", 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 92, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 93, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 94, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 95, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 96, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 97, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 98, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 99, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 100, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 101, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 63, 5, "<invalid>", "number", "int", 102, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 63, 5, "<invalid>", "number", "int", 103, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "number", "int", 63, 5, "<invalid>", "number", "int", 104, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 0.0, 4, "obj-3", "textedit", "set", 4, "<invalid>", "textedit", "set", 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 82, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 83, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 84, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 85, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 86, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 87, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 88, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 89, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 90, 5, "<invalid>", "number", "int", 1, 5, "<invalid>", "toggle", "int", 0, 5, "<invalid>", "number", "int", 0, 5, "<invalid>", "number", "int", 91, 5, "<invalid>", "number", "int", 1, 4, "<invalid>", "textedit", "set", 5, "obj-311", "number", "int", 1, 5, "obj-660", "toggle", "int", 1, 5, "obj-656", "number", "int", 10001 ]
 						}
  ],
 					"spacing" : 4
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-1632",
-					"maxclass" : "textedit",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1104.0, 2426.0, 142.0, 428.0 ],
-					"varname" : "tgl_memo"
 				}
 
 			}
@@ -987,7 +1001,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 771.0, 49.5, 56.0, 18.0 ],
+					"patching_rect" : [ 771.0, 99.5, 56.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 386.5, 53.5, 56.0, 18.0 ],
 					"text" : "MIDI OUT"
@@ -1004,7 +1018,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1076.0, 314.0, 50.0, 20.0 ],
+					"patching_rect" : [ 853.0, 13.0, 50.0, 20.0 ],
 					"text" : "midiinfo"
 				}
 
@@ -1020,9 +1034,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 853.0, 49.5, 120.0, 18.0 ],
+					"patching_rect" : [ 853.0, 99.5, 120.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 468.5, 53.5, 120.0, 18.0 ]
+					"presentation_rect" : [ 468.5, 53.5, 120.0, 18.0 ],
+					"varname" : "midi_out"
 				}
 
 			}
@@ -1301,18 +1316,18 @@
 						"dependency_cache" : [  ]
 					}
 ,
-					"patching_rect" : [ 1064.5, 461.0, 105.0, 20.0 ],
+					"patching_rect" : [ 872.5, 341.0, 105.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"digest" : "",
-						"fontface" : 0,
-						"default_fontname" : "Arial",
-						"fontsize" : 12.0,
-						"default_fontsize" : 12.0,
 						"description" : "",
 						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontface" : 0,
-						"globalpatchername" : ""
+						"digest" : "",
+						"globalpatchername" : "",
+						"default_fontname" : "Arial",
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontsize" : 12.0
 					}
 ,
 					"text" : "p presetOpt"
@@ -1328,7 +1343,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1172.0, 398.0, 46.0, 20.0 ],
+					"patching_rect" : [ 980.0, 278.0, 46.0, 20.0 ],
 					"text" : "Delete"
 				}
 
@@ -1342,7 +1357,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1171.0, 378.0, 60.0, 20.0 ],
+					"patching_rect" : [ 979.0, 258.0, 60.0, 20.0 ],
 					"text" : "DeleteAll"
 				}
 
@@ -1360,7 +1375,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1102.0, 398.0, 50.0, 20.0 ]
+					"patching_rect" : [ 910.0, 278.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -1373,7 +1388,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1151.0, 378.0, 20.0, 20.0 ]
+					"patching_rect" : [ 959.0, 258.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -1385,7 +1400,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1152.0, 418.0, 20.0, 20.0 ]
+					"patching_rect" : [ 960.0, 298.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -1397,7 +1412,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1152.0, 398.0, 20.0, 20.0 ]
+					"patching_rect" : [ 960.0, 278.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -1410,7 +1425,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1172.0, 418.0, 45.0, 20.0 ],
+					"patching_rect" : [ 980.0, 298.0, 45.0, 20.0 ],
 					"text" : "Save"
 				}
 
@@ -1428,7 +1443,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1102.0, 418.0, 50.0, 20.0 ]
+					"patching_rect" : [ 910.0, 298.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -1438,8 +1453,8 @@
 					"maxclass" : "fpic",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 36.0, 173.0, 45.0 ],
-					"pic" : "logotype-flickpad.png",
+					"patching_rect" : [ 8.5, 9.5, 180.0, 38.0 ],
+					"pic" : "logo.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 40.0, 173.0, 45.0 ]
 				}
@@ -1455,7 +1470,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1337.0, 164.0, 37.0, 18.0 ],
+					"patching_rect" : [ 739.5, 528.0, 37.0, 18.0 ],
 					"text" : "clear"
 				}
 
@@ -1470,7 +1485,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 1177.0, 134.0, 34.0, 20.0 ],
+					"patching_rect" : [ 937.5, 490.0, 34.0, 20.0 ],
 					"text" : "t b b"
 				}
 
@@ -1485,7 +1500,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1177.0, 164.0, 32.5, 18.0 ],
+					"patching_rect" : [ 937.5, 520.0, 32.5, 18.0 ],
 					"text" : "1"
 				}
 
@@ -1500,13 +1515,14 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 1077.0, 134.0, 34.0, 20.0 ],
+					"patching_rect" : [ 837.5, 490.0, 34.0, 20.0 ],
 					"text" : "t b b"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"autorestore" : "mySetting.json",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"hidden" : 1,
@@ -1515,15 +1531,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1077.0, 204.0, 207.0, 20.0 ],
+					"patching_rect" : [ 717.0, 560.0, 220.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"storage_rect" : [ 583, 69, 1142, 630 ],
 						"client_rect" : [ 4, 44, 401, 403 ],
-						"parameter_enable" : 0
+						"parameter_enable" : 0,
+						"storage_rect" : [ 766, 44, 1220, 302 ]
 					}
 ,
-					"text" : "pattrstorage storage @outputmode 1",
-					"varname" : "storage"
+					"text" : "pattrstorage mySetting @outputmode 1",
+					"varname" : "mySetting"
 				}
 
 			}
@@ -1537,7 +1553,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1247.0, 164.0, 91.0, 18.0 ],
+					"patching_rect" : [ 739.5, 475.5, 91.0, 18.0 ],
 					"text" : "storagewindow"
 				}
 
@@ -1552,13 +1568,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 1077.0, 234.0, 59.5, 20.0 ],
+					"patching_rect" : [ 951.0, 560.0, 59.5, 20.0 ],
 					"restore" : 					{
-						"tgl_memo" : [ "<empty>" ]
+						"midi_out" : [ 0 ],
+						"midi_port" : [ 10026 ],
+						"osc_recieve" : [ 1 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u733000120"
+					"varname" : "u791010811"
 				}
 
 			}
@@ -1572,7 +1590,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1117.0, 164.0, 46.0, 18.0 ],
+					"patching_rect" : [ 877.5, 520.0, 46.0, 18.0 ],
 					"text" : "store 1"
 				}
 
@@ -1587,7 +1605,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1207.0, 164.0, 35.0, 18.0 ],
+					"patching_rect" : [ 967.5, 520.0, 35.0, 18.0 ],
 					"text" : "read"
 				}
 
@@ -1602,7 +1620,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1077.0, 164.0, 36.0, 18.0 ],
+					"patching_rect" : [ 837.5, 520.0, 36.0, 18.0 ],
 					"text" : "write"
 				}
 
@@ -1617,7 +1635,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1042.0, 82.5, 50.0, 18.0 ],
+					"patching_rect" : [ 960.0, 168.5, 50.0, 18.0 ],
 					"text" : "port $1"
 				}
 
@@ -1633,7 +1651,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 20.0, 9.5, 257.0, 20.0 ]
+					"patching_rect" : [ 8.5, -27.5, 257.0, 20.0 ]
 				}
 
 			}
@@ -1700,6 +1718,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-743", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"midpoints" : [ 749.0, 552.5, 726.5, 552.5 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 0.858824, 0.858824, 0.858824, 1.0 ],
 					"destination" : [ "obj-124", 3 ],
 					"disabled" : 0,
@@ -1715,6 +1743,15 @@
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-124", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-743", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -1850,6 +1887,7 @@
 					"destination" : [ "obj-743", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
+					"midpoints" : [ 749.0, 552.5, 726.5, 552.5 ],
 					"source" : [ "obj-319", 0 ]
 				}
 
@@ -1878,60 +1916,6 @@
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-34", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 2 ],
-					"disabled" : 0,
-					"hidden" : 1,
-					"source" : [ "obj-36", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 1 ],
-					"disabled" : 0,
-					"hidden" : 1,
-					"source" : [ "obj-36", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"disabled" : 0,
-					"hidden" : 1,
-					"source" : [ "obj-36", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 2 ],
-					"disabled" : 0,
-					"hidden" : 1,
-					"source" : [ "obj-37", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 1 ],
-					"disabled" : 0,
-					"hidden" : 1,
-					"source" : [ "obj-37", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"disabled" : 0,
-					"hidden" : 1,
-					"source" : [ "obj-37", 0 ]
 				}
 
 			}
@@ -2102,6 +2086,7 @@
 					"destination" : [ "obj-743", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
+					"midpoints" : [ 847.0, 552.5, 726.5, 552.5 ],
 					"source" : [ "obj-718", 0 ]
 				}
 
@@ -2111,6 +2096,7 @@
 					"destination" : [ "obj-743", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
+					"midpoints" : [ 977.0, 553.5, 726.5, 553.5 ],
 					"source" : [ "obj-720", 0 ]
 				}
 
@@ -2120,6 +2106,7 @@
 					"destination" : [ "obj-743", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
+					"midpoints" : [ 887.0, 554.5, 726.5, 554.5 ],
 					"source" : [ "obj-730", 0 ]
 				}
 
@@ -2129,6 +2116,7 @@
 					"destination" : [ "obj-743", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
+					"midpoints" : [ 749.0, 554.25, 726.5, 554.25 ],
 					"source" : [ "obj-739", 0 ]
 				}
 
@@ -2166,6 +2154,7 @@
 					"destination" : [ "obj-743", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
+					"midpoints" : [ 947.0, 554.5, 726.5, 554.5 ],
 					"source" : [ "obj-763", 0 ]
 				}
 
@@ -2190,113 +2179,120 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-36::obj-8::obj-437" : [ "live.button[9]", "live.button", 0 ],
-			"obj-36::obj-10::obj-435" : [ "live.button[166]", "live.button", 0 ],
-			"obj-37::obj-678::obj-435" : [ "live.button[45]", "live.button", 0 ],
-			"obj-37::obj-64::obj-594" : [ "live.button[55]", "live.button", 0 ],
-			"obj-37::obj-687::obj-435" : [ "live.button[159]", "live.button", 0 ],
-			"obj-37::obj-683::obj-435" : [ "live.button[31]", "live.button", 0 ],
-			"obj-37::obj-678::obj-437" : [ "live.button[47]", "live.button", 0 ],
-			"obj-36::obj-67::obj-594" : [ "live.button[60]", "live.button", 0 ],
-			"obj-37::obj-682::obj-434" : [ "live.button[41]", "live.button", 0 ],
-			"obj-36::obj-16::obj-437" : [ "live.button[65]", "live.button", 0 ],
-			"obj-36::obj-12::obj-437" : [ "live.button[70]", "live.button", 0 ],
-			"obj-36::obj-17::obj-436" : [ "live.button[75]", "live.button", 0 ],
-			"obj-37::obj-50::obj-594" : [ "live.button[80]", "live.button", 0 ],
-			"obj-37::obj-51::obj-594" : [ "live.button[85]", "live.button", 0 ],
-			"obj-36::obj-9::obj-437" : [ "live.button[90]", "live.button", 0 ],
-			"obj-36::obj-10::obj-437" : [ "live.button[95]", "live.button", 0 ],
-			"obj-37::obj-683::obj-433" : [ "live.button[30]", "live.button", 0 ],
-			"obj-36::obj-8::obj-436" : [ "live.button[8]", "live.button", 0 ],
-			"obj-37::obj-690::obj-435" : [ "live.button[23]", "live.button", 0 ],
-			"obj-37::obj-682::obj-436" : [ "live.button[43]", "live.button", 0 ],
-			"obj-36::obj-1::obj-435" : [ "live.button[164]", "live.button", 0 ],
-			"obj-37::obj-691::obj-434" : [ "live.button[26]", "live.button", 0 ],
-			"obj-37::obj-681::obj-434" : [ "live.button[38]", "live.button", 0 ],
-			"obj-37::obj-655::obj-437" : [ "live.button[51]", "live.button", 0 ],
-			"obj-37::obj-65::obj-594" : [ "live.button[56]", "live.button", 0 ],
-			"obj-36::obj-51::obj-594" : [ "live.button[61]", "live.button", 0 ],
-			"obj-37::obj-689::obj-435" : [ "live.button[18]", "live.button", 0 ],
-			"obj-37::obj-678::obj-436" : [ "live.button[46]", "live.button", 0 ],
-			"obj-36::obj-9::obj-435" : [ "live.button[66]", "live.button", 0 ],
-			"obj-37::obj-690::obj-434" : [ "live.button[20]", "live.button", 0 ],
-			"obj-36::obj-13::obj-435" : [ "live.button[71]", "live.button", 0 ],
-			"obj-36::obj-17::obj-437" : [ "live.button[76]", "live.button", 0 ],
+			"obj-37::obj-690::obj-435" : [ "live.button[67]", "live.button", 0 ],
+			"obj-37::obj-690::obj-434" : [ "live.button[66]", "live.button", 0 ],
+			"obj-37::obj-682::obj-433" : [ "live.button[50]", "live.button", 0 ],
+			"obj-36::obj-13::obj-436" : [ "live.button[23]", "live.button", 0 ],
+			"obj-37::obj-678::obj-433" : [ "live.button[78]", "live.button", 0 ],
+			"obj-37::obj-683::obj-435" : [ "live.button[87]", "live.button", 0 ],
 			"obj-25::obj-1622" : [ "live.button[134]", "live.button", 0 ],
-			"obj-37::obj-688::obj-434" : [ "live.button[81]", "live.button", 0 ],
-			"obj-37::obj-52::obj-594" : [ "live.button[86]", "live.button", 0 ],
-			"obj-36::obj-13::obj-437" : [ "live.button[91]", "live.button", 0 ],
-			"obj-25::obj-1621" : [ "live.button[138]", "live.button", 0 ],
-			"obj-36::obj-1::obj-437" : [ "live.button[96]", "live.button", 0 ],
-			"obj-37::obj-691::obj-436" : [ "live.button[28]", "live.button", 0 ],
-			"obj-36::obj-8::obj-435" : [ "live.button[7]", "live.button", 0 ],
-			"obj-37::obj-690::obj-433" : [ "live.button[22]", "live.button", 0 ],
-			"obj-37::obj-683::obj-434" : [ "live.button[32]", "live.button", 0 ],
-			"obj-37::obj-655::obj-434" : [ "live.button[52]", "live.button", 0 ],
-			"obj-36::obj-17::obj-435" : [ "live.button[163]", "live.button", 0 ],
-			"obj-37::obj-67::obj-594" : [ "live.button[57]", "live.button", 0 ],
+			"obj-37::obj-682::obj-434" : [ "live.button[95]", "live.button", 0 ],
+			"obj-36::obj-66::obj-594" : [ "live.button[39]", "live.button", 0 ],
+			"obj-36::obj-14::obj-437" : [ "live.button[26]", "live.button", 0 ],
+			"obj-37::obj-655::obj-437" : [ "live.button[102]", "live.button", 0 ],
+			"obj-37::obj-66::obj-594" : [ "live.button[46]", "live.button", 0 ],
+			"obj-37::obj-682::obj-437" : [ "live.button[52]", "live.button", 0 ],
+			"obj-36::obj-9::obj-435" : [ "live.button[12]", "live.button", 0 ],
+			"obj-36::obj-17::obj-436" : [ "live.button[35]", "live.button", 0 ],
+			"obj-37::obj-688::obj-437" : [ "live.button[59]", "live.button", 0 ],
+			"obj-36::obj-53::obj-594" : [ "live.button[45]", "live.button", 0 ],
 			"obj-37::obj-687::obj-437" : [ "live.button[156]", "live.button", 0 ],
-			"obj-37::obj-683::obj-437" : [ "live.button[34]", "live.button", 0 ],
-			"obj-36::obj-50::obj-594" : [ "live.button[62]", "live.button", 0 ],
-			"obj-37::obj-687::obj-436" : [ "live.button[155]", "live.button", 0 ],
-			"obj-37::obj-689::obj-437" : [ "live.button[15]", "live.button", 0 ],
-			"obj-37::obj-682::obj-437" : [ "live.button[44]", "live.button", 0 ],
-			"obj-36::obj-9::obj-436" : [ "live.button[67]", "live.button", 0 ],
-			"obj-37::obj-687::obj-433" : [ "live.button[157]", "live.button", 0 ],
-			"obj-37::obj-688::obj-437" : [ "live.button[11]", "live.button", 0 ],
-			"obj-37::obj-689::obj-434" : [ "live.button[17]", "live.button", 0 ],
-			"obj-36::obj-12::obj-435" : [ "live.button[72]", "live.button", 0 ],
-			"obj-37::obj-688::obj-433" : [ "live.button[12]", "live.button", 0 ],
-			"obj-37::obj-689::obj-433" : [ "live.button[16]", "live.button", 0 ],
-			"obj-36::obj-10::obj-436" : [ "live.button[77]", "live.button", 0 ],
-			"obj-37::obj-53::obj-594" : [ "live.button[82]", "live.button", 0 ],
-			"obj-36::obj-52::obj-594" : [ "live.button[87]", "live.button", 0 ],
-			"obj-36::obj-53::obj-594" : [ "live.button[92]", "live.button", 0 ],
-			"obj-37::obj-690::obj-436" : [ "live.button[24]", "live.button", 0 ],
-			"obj-37::obj-691::obj-433" : [ "live.button[25]", "live.button", 0 ],
-			"obj-36::obj-1::obj-436" : [ "live.button[162]", "live.button", 0 ],
-			"obj-37::obj-682::obj-435" : [ "live.button[42]", "live.button", 0 ],
-			"obj-37::obj-655::obj-436" : [ "live.button[53]", "live.button", 0 ],
-			"obj-36::obj-14::obj-435" : [ "live.button[161]", "live.button", 0 ],
-			"obj-37::obj-682::obj-433" : [ "live.button[40]", "live.button", 0 ],
-			"obj-36::obj-14::obj-437" : [ "live.button[63]", "live.button", 0 ],
-			"obj-37::obj-681::obj-433" : [ "live.button[37]", "live.button", 0 ],
-			"obj-36::obj-11::obj-437" : [ "live.button[68]", "live.button", 0 ],
-			"obj-37::obj-678::obj-433" : [ "live.button[48]", "live.button", 0 ],
-			"obj-36::obj-16::obj-435" : [ "live.button[73]", "live.button", 0 ],
-			"obj-37::obj-688::obj-436" : [ "live.button[14]", "live.button", 0 ],
-			"obj-36::obj-11::obj-436" : [ "live.button[78]", "live.button", 0 ],
+			"obj-36::obj-8::obj-435" : [ "live.button[7]", "live.button", 0 ],
+			"obj-36::obj-11::obj-437" : [ "live.button[17]", "live.button", 0 ],
+			"obj-37::obj-687::obj-435" : [ "live.button[159]", "live.button", 0 ],
+			"obj-37::obj-690::obj-436" : [ "live.button[68]", "live.button", 0 ],
+			"obj-37::obj-683::obj-434" : [ "live.button[76]", "live.button", 0 ],
+			"obj-36::obj-14::obj-436" : [ "live.button[25]", "live.button", 0 ],
+			"obj-37::obj-691::obj-436" : [ "live.button[73]", "live.button", 0 ],
+			"obj-37::obj-681::obj-433" : [ "live.button[90]", "live.button", 0 ],
+			"obj-25::obj-1621" : [ "live.button[138]", "live.button", 0 ],
+			"obj-37::obj-689::obj-434" : [ "live.button[61]", "live.button", 0 ],
+			"obj-37::obj-655::obj-435" : [ "live.button[100]", "live.button", 0 ],
+			"obj-36::obj-1::obj-435" : [ "live.button[28]", "live.button", 0 ],
+			"obj-36::obj-17::obj-437" : [ "live.button[36]", "live.button", 0 ],
+			"obj-37::obj-64::obj-594" : [ "live.button[55]", "live.button", 0 ],
+			"obj-37::obj-655::obj-434" : [ "live.button[99]", "live.button", 0 ],
+			"obj-36::obj-16::obj-437" : [ "live.button[33]", "live.button", 0 ],
+			"obj-37::obj-682::obj-435" : [ "live.button[51]", "live.button", 0 ],
+			"obj-36::obj-10::obj-436" : [ "live.button[13]", "live.button", 0 ],
+			"obj-37::obj-689::obj-435" : [ "live.button[62]", "live.button", 0 ],
+			"obj-36::obj-49::obj-594" : [ "live.button[41]", "live.button", 0 ],
 			"obj-37::obj-63::obj-594" : [ "live.button[83]", "live.button", 0 ],
-			"obj-36::obj-66::obj-594" : [ "live.button[88]", "live.button", 0 ],
-			"obj-36::obj-14::obj-436" : [ "live.button[93]", "live.button", 0 ],
-			"obj-37::obj-681::obj-435" : [ "live.button[39]", "live.button", 0 ],
-			"obj-37::obj-678::obj-434" : [ "live.button[49]", "live.button", 0 ],
-			"obj-37::obj-690::obj-437" : [ "live.button[21]", "live.button", 0 ],
-			"obj-36::obj-11::obj-435" : [ "live.button[160]", "live.button", 0 ],
-			"obj-37::obj-655::obj-433" : [ "live.button[54]", "live.button", 0 ],
-			"obj-36::obj-63::obj-594" : [ "live.button[59]", "live.button", 0 ],
-			"obj-37::obj-681::obj-436" : [ "live.button[35]", "live.button", 0 ],
-			"obj-37::obj-655::obj-435" : [ "live.button[50]", "live.button", 0 ],
-			"obj-36::obj-13::obj-436" : [ "live.button[64]", "live.button", 0 ],
-			"obj-37::obj-689::obj-436" : [ "live.button[19]", "live.button", 0 ],
-			"obj-25::obj-1623" : [ "live.button[140]", "live.button", 0 ],
-			"obj-36::obj-12::obj-436" : [ "live.button[69]", "live.button", 0 ],
-			"obj-37::obj-66::obj-594" : [ "live.button[10]", "live.button", 0 ],
-			"obj-37::obj-687::obj-434" : [ "live.button[158]", "live.button", 0 ],
-			"obj-36::obj-16::obj-436" : [ "live.button[74]", "live.button", 0 ],
-			"obj-37::obj-688::obj-435" : [ "live.button[13]", "live.button", 0 ],
-			"obj-36::obj-64::obj-594" : [ "live.button[79]", "live.button", 0 ],
+			"obj-36::obj-8::obj-436" : [ "live.button[8]", "live.button", 0 ],
+			"obj-36::obj-12::obj-437" : [ "live.button[20]", "live.button", 0 ],
 			"obj-37::obj-49::obj-594" : [ "live.button[84]", "live.button", 0 ],
-			"obj-36::obj-49::obj-594" : [ "live.button[89]", "live.button", 0 ],
-			"obj-36::obj-65::obj-594" : [ "live.button[94]", "live.button", 0 ],
-			"obj-37::obj-691::obj-435" : [ "live.button[27]", "live.button", 0 ],
-			"obj-37::obj-691::obj-437" : [ "live.button[29]", "live.button", 0 ],
-			"obj-37::obj-681::obj-437" : [ "live.button[36]", "live.button", 0 ],
-			"obj-37::obj-683::obj-436" : [ "live.button[33]", "live.button", 0 ]
+			"obj-37::obj-690::obj-437" : [ "live.button[69]", "live.button", 0 ],
+			"obj-37::obj-688::obj-435" : [ "live.button[48]", "live.button", 0 ],
+			"obj-37::obj-691::obj-434" : [ "live.button[71]", "live.button", 0 ],
+			"obj-36::obj-13::obj-437" : [ "live.button[22]", "live.button", 0 ],
+			"obj-37::obj-683::obj-433" : [ "live.button[75]", "live.button", 0 ],
+			"obj-37::obj-678::obj-437" : [ "live.button[97]", "live.button", 0 ],
+			"obj-36::obj-64::obj-594" : [ "live.button[37]", "live.button", 0 ],
+			"obj-36::obj-1::obj-437" : [ "live.button[29]", "live.button", 0 ],
+			"obj-36::obj-10::obj-437" : [ "live.button[15]", "live.button", 0 ],
+			"obj-36::obj-16::obj-435" : [ "live.button[31]", "live.button", 0 ],
+			"obj-37::obj-690::obj-433" : [ "live.button[65]", "live.button", 0 ],
+			"obj-36::obj-50::obj-594" : [ "live.button[42]", "live.button", 0 ],
+			"obj-37::obj-52::obj-594" : [ "live.button[86]", "live.button", 0 ],
+			"obj-37::obj-687::obj-436" : [ "live.button[155]", "live.button", 0 ],
+			"obj-37::obj-681::obj-434" : [ "live.button[91]", "live.button", 0 ],
+			"obj-36::obj-8::obj-437" : [ "live.button[9]", "live.button", 0 ],
+			"obj-36::obj-12::obj-436" : [ "live.button[19]", "live.button", 0 ],
+			"obj-37::obj-50::obj-594" : [ "live.button[80]", "live.button", 0 ],
+			"obj-37::obj-688::obj-433" : [ "live.button[47]", "live.button", 0 ],
+			"obj-37::obj-691::obj-433" : [ "live.button[70]", "live.button", 0 ],
+			"obj-37::obj-682::obj-436" : [ "live.button[77]", "live.button", 0 ],
+			"obj-36::obj-12::obj-435" : [ "live.button[21]", "live.button", 0 ],
+			"obj-37::obj-683::obj-437" : [ "live.button[89]", "live.button", 0 ],
+			"obj-37::obj-65::obj-594" : [ "live.button[56]", "live.button", 0 ],
+			"obj-37::obj-681::obj-437" : [ "live.button[94]", "live.button", 0 ],
+			"obj-36::obj-9::obj-436" : [ "live.button[10]", "live.button", 0 ],
+			"obj-37::obj-655::obj-436" : [ "live.button[101]", "live.button", 0 ],
+			"obj-36::obj-65::obj-594" : [ "live.button[38]", "live.button", 0 ],
+			"obj-36::obj-14::obj-435" : [ "live.button[27]", "live.button", 0 ],
+			"obj-36::obj-10::obj-435" : [ "live.button[14]", "live.button", 0 ],
+			"obj-36::obj-16::obj-436" : [ "live.button[32]", "live.button", 0 ],
+			"obj-37::obj-689::obj-437" : [ "live.button[64]", "live.button", 0 ],
+			"obj-37::obj-678::obj-434" : [ "live.button[53]", "live.button", 0 ],
+			"obj-36::obj-52::obj-594" : [ "live.button[44]", "live.button", 0 ],
+			"obj-37::obj-688::obj-434" : [ "live.button[81]", "live.button", 0 ],
+			"obj-36::obj-11::obj-435" : [ "live.button[18]", "live.button", 0 ],
+			"obj-37::obj-51::obj-594" : [ "live.button[85]", "live.button", 0 ],
+			"obj-37::obj-681::obj-435" : [ "live.button[92]", "live.button", 0 ],
+			"obj-37::obj-687::obj-433" : [ "live.button[157]", "live.button", 0 ],
+			"obj-37::obj-688::obj-436" : [ "live.button[49]", "live.button", 0 ],
+			"obj-37::obj-691::obj-437" : [ "live.button[74]", "live.button", 0 ],
+			"obj-36::obj-13::obj-435" : [ "live.button[24]", "live.button", 0 ],
+			"obj-37::obj-691::obj-435" : [ "live.button[72]", "live.button", 0 ],
+			"obj-37::obj-67::obj-594" : [ "live.button[57]", "live.button", 0 ],
+			"obj-37::obj-683::obj-436" : [ "live.button[88]", "live.button", 0 ],
+			"obj-25::obj-1623" : [ "live.button[140]", "live.button", 0 ],
+			"obj-37::obj-689::obj-436" : [ "live.button[63]", "live.button", 0 ],
+			"obj-37::obj-655::obj-433" : [ "live.button[98]", "live.button", 0 ],
+			"obj-36::obj-1::obj-436" : [ "live.button[30]", "live.button", 0 ],
+			"obj-37::obj-678::obj-435" : [ "live.button[96]", "live.button", 0 ],
+			"obj-36::obj-67::obj-594" : [ "live.button[40]", "live.button", 0 ],
+			"obj-37::obj-678::obj-436" : [ "live.button[54]", "live.button", 0 ],
+			"obj-36::obj-63::obj-594" : [ "live.button[58]", "live.button", 0 ],
+			"obj-36::obj-9::obj-437" : [ "live.button[11]", "live.button", 0 ],
+			"obj-36::obj-17::obj-435" : [ "live.button[34]", "live.button", 0 ],
+			"obj-36::obj-51::obj-594" : [ "live.button[43]", "live.button", 0 ],
+			"obj-37::obj-53::obj-594" : [ "live.button[82]", "live.button", 0 ],
+			"obj-36::obj-11::obj-436" : [ "live.button[16]", "live.button", 0 ],
+			"obj-37::obj-687::obj-434" : [ "live.button[158]", "live.button", 0 ],
+			"obj-37::obj-689::obj-433" : [ "live.button[60]", "live.button", 0 ],
+			"obj-37::obj-681::obj-436" : [ "live.button[93]", "live.button", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "logotype-flickpad.png",
+				"name" : "mySetting.json",
+				"bootpath" : "/Users/terada/Desktop",
+				"patcherrelativepath" : "",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "logo.png",
 				"bootpath" : "/Users/terada/Desktop/MIDI Bridge",
 				"patcherrelativepath" : "",
 				"type" : "PNG ",
@@ -2317,14 +2313,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Button.maxpat",
+				"name" : "Btn.maxpat",
 				"bootpath" : "/Users/terada/Desktop/MIDI Bridge",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Toggle.maxpat",
+				"name" : "Tgl.maxpat",
 				"bootpath" : "/Users/terada/Desktop/MIDI Bridge",
 				"patcherrelativepath" : "",
 				"type" : "JSON",

@@ -7,7 +7,7 @@
 			"revision" : 5
 		}
 ,
-		"rect" : [ 571.0, 567.0, 1189.0, 666.0 ],
+		"rect" : [ 898.0, 375.0, 1189.0, 666.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -27,6 +27,44 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 3.0, -89.0, 59.5, 20.0 ],
+					"restore" : 					{
+						"ch_alpha" : [ 1 ],
+						"ch_touch" : [ 1 ],
+						"ch_visible" : [ 1 ],
+						"ch_x" : [ 1 ],
+						"ch_y" : [ 1 ],
+						"live.button[5]" : [ 0.0 ],
+						"live.button[6]" : [ 0.0 ],
+						"live.button[7]" : [ 0.0 ],
+						"live.button[8]" : [ 0.0 ],
+						"live.button[9]" : [ 0.0 ],
+						"num_alpha" : [ 0 ],
+						"num_touch" : [ 0 ],
+						"num_visible" : [ 0 ],
+						"num_x" : [ 0 ],
+						"num_y" : [ 0 ],
+						"val_alpha" : [ 0 ],
+						"val_touch" : [ 0 ],
+						"val_visible" : [ 0 ],
+						"val_x" : [ 0 ],
+						"val_y" : [ 0 ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u937006834"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -174,7 +212,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 99.25, 188.0, 71.5, 20.0 ],
+					"patching_rect" : [ 96.0, 104.0, 71.5, 20.0 ],
 					"text" : " OSC value"
 				}
 
@@ -187,7 +225,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 184.25, 188.0, 36.0, 20.0 ],
+					"patching_rect" : [ 207.0, 130.0, 36.0, 20.0 ],
 					"text" : "MIDI"
 				}
 
@@ -204,7 +242,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 207.0, 68.0, 36.0, 18.0 ]
+					"patching_rect" : [ 207.0, 68.0, 36.0, 18.0 ],
+					"varname" : "val_alpha"
 				}
 
 			}
@@ -220,7 +259,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 207.0, 52.0, 36.0, 18.0 ]
+					"patching_rect" : [ 207.0, 52.0, 36.0, 18.0 ],
+					"varname" : "val_visible"
 				}
 
 			}
@@ -236,7 +276,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 207.0, 36.0, 36.0, 18.0 ]
+					"patching_rect" : [ 207.0, 36.0, 36.0, 18.0 ],
+					"varname" : "val_touch"
 				}
 
 			}
@@ -252,7 +293,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 207.0, 20.0, 36.0, 18.0 ]
+					"patching_rect" : [ 207.0, 20.0, 36.0, 18.0 ],
+					"varname" : "val_y"
 				}
 
 			}
@@ -268,7 +310,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 207.0, 4.0, 36.0, 18.0 ]
+					"patching_rect" : [ 207.0, 4.0, 36.0, 18.0 ],
+					"varname" : "val_x"
 				}
 
 			}
@@ -827,16 +870,16 @@
 ,
 					"patching_rect" : [ 269.0, -66.0, 299.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"digest" : "",
-						"fontface" : 0,
-						"default_fontname" : "Arial",
-						"fontsize" : 12.0,
-						"default_fontsize" : 12.0,
 						"description" : "",
 						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontface" : 0,
-						"globalpatchername" : ""
+						"digest" : "",
+						"globalpatchername" : "",
+						"default_fontname" : "Arial",
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontsize" : 12.0
 					}
 ,
 					"text" : "p kp_scale"
@@ -870,7 +913,7 @@
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 275.0, 68.0, 36.0, 18.0 ],
-					"varname" : "A_ch1_r"
+					"varname" : "ch_alpha"
 				}
 
 			}
@@ -886,7 +929,7 @@
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 241.0, 68.0, 36.0, 18.0 ],
-					"varname" : "A_num1_r"
+					"varname" : "num_alpha"
 				}
 
 			}
@@ -917,7 +960,7 @@
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 275.0, 52.0, 36.0, 18.0 ],
-					"varname" : "A_ch1_d"
+					"varname" : "ch_visible"
 				}
 
 			}
@@ -933,7 +976,7 @@
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 241.0, 52.0, 36.0, 18.0 ],
-					"varname" : "A_num1_d"
+					"varname" : "num_visible"
 				}
 
 			}
@@ -964,7 +1007,7 @@
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 275.0, 36.0, 36.0, 18.0 ],
-					"varname" : "A_ch1_t"
+					"varname" : "ch_touch"
 				}
 
 			}
@@ -980,7 +1023,7 @@
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 241.0, 36.0, 36.0, 18.0 ],
-					"varname" : "A_num1_t"
+					"varname" : "num_touch"
 				}
 
 			}
@@ -1011,7 +1054,7 @@
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 275.0, 20.0, 36.0, 18.0 ],
-					"varname" : "A_ch1_y"
+					"varname" : "ch_y"
 				}
 
 			}
@@ -1027,7 +1070,7 @@
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 241.0, 20.0, 36.0, 18.0 ],
-					"varname" : "A_num1_y"
+					"varname" : "num_y"
 				}
 
 			}
@@ -1058,7 +1101,7 @@
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 275.0, 4.0, 36.0, 18.0 ],
-					"varname" : "A_ch1_x"
+					"varname" : "ch_x"
 				}
 
 			}
@@ -1074,7 +1117,7 @@
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 241.0, 4.0, 36.0, 18.0 ],
-					"varname" : "A_num1_x"
+					"varname" : "num_x"
 				}
 
 			}
@@ -1929,9 +1972,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-437" : [ "live.button[9]", "live.button", 0 ],
-			"obj-436" : [ "live.button[8]", "live.button", 0 ],
 			"obj-435" : [ "live.button[7]", "live.button", 0 ],
+			"obj-436" : [ "live.button[8]", "live.button", 0 ],
+			"obj-437" : [ "live.button[9]", "live.button", 0 ],
 			"obj-433" : [ "live.button[5]", "live.button", 0 ],
 			"obj-434" : [ "live.button[6]", "live.button", 0 ]
 		}
