@@ -28,6 +28,42 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"hint" : "MIDI OUT",
+					"id" : "obj-4",
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 444.0, -201.0, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"hint" : "out bang when midiout",
+					"id" : "obj-10",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 444.0, 28.0, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 444.0, 4.0, 20.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-1",
@@ -44,7 +80,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u302007488"
+					"varname" : "u790005405"
 				}
 
 			}
@@ -157,6 +193,8 @@
 			}
 , 			{
 				"box" : 				{
+					"activebgoncolor" : [ 0.008733, 1.0, 0.991623, 1.0 ],
+					"bordercolor" : [ 0.27451, 0.32549, 0.4, 0.0 ],
 					"id" : "obj-594",
 					"maxclass" : "live.button",
 					"numinlets" : 1,
@@ -486,6 +524,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-591", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
@@ -508,6 +555,16 @@
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-583", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"midpoints" : [ 249.0, -7.0, 453.5, -7.0 ],
+					"source" : [ "obj-583", 1 ]
 				}
 
 			}
@@ -562,6 +619,15 @@
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-595", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
