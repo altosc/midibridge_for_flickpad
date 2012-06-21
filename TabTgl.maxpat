@@ -48,7 +48,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 599.0, 155.0, 25.0, 25.0 ]
+					"patching_rect" : [ 281.0, 300.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -64,7 +64,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 573.5, -51.0, 59.5, 20.0 ],
 					"text" : "autopattr",
-					"varname" : "u461004872"
+					"varname" : "u860006067"
 				}
 
 			}
@@ -76,7 +76,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 515.333313, 155.0, 25.0, 25.0 ]
+					"patching_rect" : [ 197.333313, 300.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -88,7 +88,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 416.666656, 155.0, 25.0, 25.0 ]
+					"patching_rect" : [ 98.666656, 300.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -100,7 +100,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 318.0, 155.0, 25.0, 25.0 ]
+					"patching_rect" : [ 0.0, 300.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -184,7 +184,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "bang" ],
-					"patching_rect" : [ 318.0, 116.0, 315.0, 26.0 ],
+					"patching_rect" : [ 0.0, 261.0, 315.0, 26.0 ],
 					"varname" : "toggle10"
 				}
 
@@ -198,7 +198,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "bang" ],
-					"patching_rect" : [ 318.0, 87.0, 315.0, 26.0 ],
+					"patching_rect" : [ 0.0, 232.0, 315.0, 26.0 ],
 					"varname" : "toggle9"
 				}
 
@@ -212,7 +212,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "bang" ],
-					"patching_rect" : [ 318.0, 58.0, 315.0, 26.0 ],
+					"patching_rect" : [ 0.0, 203.0, 315.0, 26.0 ],
 					"varname" : "toggle8"
 				}
 
@@ -226,7 +226,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "bang" ],
-					"patching_rect" : [ 318.0, 29.0, 315.0, 26.0 ],
+					"patching_rect" : [ 0.0, 174.0, 315.0, 26.0 ],
 					"varname" : "toggle7"
 				}
 
@@ -241,7 +241,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "bang" ],
-					"patching_rect" : [ 318.0, 0.0, 315.0, 26.0 ],
+					"patching_rect" : [ 0.0, 145.0, 315.0, 26.0 ],
 					"varname" : "toggle6"
 				}
 
@@ -328,7 +328,7 @@
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
-					"midpoints" : [ 623.5, 148.0, 608.5, 148.0 ],
+					"midpoints" : [ 305.5, 293.0, 290.5, 293.0 ],
 					"source" : [ "obj-49", 3 ]
 				}
 
@@ -686,21 +686,21 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-64::obj-594" : [ "live.button[55]", "live.button", 0 ],
-			"obj-49::obj-594" : [ "live.button[60]", "live.button", 0 ],
-			"obj-67::obj-594" : [ "live.button[57]", "live.button", 0 ],
-			"obj-65::obj-594" : [ "live.button[56]", "live.button", 0 ],
-			"obj-53::obj-594" : [ "live.button[64]", "live.button", 0 ],
-			"obj-52::obj-594" : [ "live.button[63]", "live.button", 0 ],
-			"obj-50::obj-594" : [ "live.button[61]", "live.button", 0 ],
-			"obj-51::obj-594" : [ "live.button[62]", "live.button", 0 ],
 			"obj-66::obj-594" : [ "live.button[59]", "live.button", 0 ],
-			"obj-63::obj-594" : [ "live.button[58]", "live.button", 0 ]
+			"obj-52::obj-594" : [ "live.button[63]", "live.button", 0 ],
+			"obj-67::obj-594" : [ "live.button[57]", "live.button", 0 ],
+			"obj-49::obj-594" : [ "live.button[60]", "live.button", 0 ],
+			"obj-63::obj-594" : [ "live.button[58]", "live.button", 0 ],
+			"obj-53::obj-594" : [ "live.button[64]", "live.button", 0 ],
+			"obj-64::obj-594" : [ "live.button[55]", "live.button", 0 ],
+			"obj-50::obj-594" : [ "live.button[61]", "live.button", 0 ],
+			"obj-65::obj-594" : [ "live.button[56]", "live.button", 0 ],
+			"obj-51::obj-594" : [ "live.button[62]", "live.button", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Tgl.maxpat",
-				"bootpath" : "/Users/terada/Desktop/MIDI Bridge",
+				"bootpath" : "/Users/terada/Documents/WORK/WORK2012/31-ALTOSC/MIDI Bridge/master",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
