@@ -5,11 +5,6 @@ OSC -> MIDI Converter for ALT OSC - FLICK PAD
 ##ALT OSC
 [Official Site](http://altosc.com)
 
-##Require
-[OSC-route by Matt Wright](http://cnmat.berkeley.edu/patch/4029)
-
-
-
 ##Instruction
 1. INTRODUCTIONの手順に従い、ALT OSCとMIDI Bridgeを接続します。
 1. ウィンドウ右上のOSC INパネルのPort番号が正しいか、Activeボックスにチェックが入っているかを確認し、ALT OSCのコントローラを操作した際にOSC INとMIDI OUTパネルのランプが２つとも点灯することを確認します。
