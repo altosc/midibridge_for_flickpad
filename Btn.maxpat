@@ -7,7 +7,7 @@
 			"revision" : 5
 		}
 ,
-		"rect" : [ 281.0, 860.0, 1189.0, 666.0 ],
+		"rect" : [ 586.0, 466.0, 1189.0, 666.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -27,6 +27,84 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4.0, -26.0, 74.0, 20.0 ],
+					"text" : "prepend set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 4.0, -74.0, 59.5, 20.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4.0, -50.0, 137.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0
+					}
+,
+					"text" : "js combine.js button/ #1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 166.0, -120.0, 60.0, 20.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 166.0, -93.0, 190.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0
+					}
+,
+					"text" : "js combine.js /ALTOSC/button/ #1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "",
 					"hint" : "MIDI OUT",
@@ -73,7 +151,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 4.0, -108.5, 59.5, 20.0 ],
+					"patching_rect" : [ 4.0, -182.5, 59.5, 20.0 ],
 					"restore" : 					{
 						"ch_touch" : [ 1 ],
 						"live.button[103]" : [ 0.0 ],
@@ -82,7 +160,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u468002750"
+					"varname" : "u278011739"
 				}
 
 			}
@@ -218,11 +296,11 @@
 					"patching_rect" : [ 96.0, 7.0, 12.0, 12.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
 							"parameter_type" : 2,
 							"parameter_shortname" : "live.button",
 							"parameter_longname" : "live.button[58]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_mmax" : 1.0
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -235,41 +313,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 4.0, -27.0, 135.0, 20.0 ],
-					"text" : "loadmess set button #1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-76",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 133.5, -93.0, 77.0, 20.0 ],
-					"text" : "osc-route #1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-77",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 133.5, -124.0, 151.0, 20.0 ],
-					"text" : "osc-route /ALTOSC/button"
+					"patching_rect" : [ 147.0, -62.0, 38.0, 20.0 ],
+					"text" : "route"
 				}
 
 			}
@@ -302,7 +352,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 159.0, -157.0, 25.0, 25.0 ]
+					"patching_rect" : [ 173.0, -157.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -417,7 +467,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 133.0, -201.0, 25.0, 25.0 ]
+					"patching_rect" : [ 147.0, -201.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -431,7 +481,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 4.0, 4.0, 72.0, 20.0 ],
-					"text" : "button #1"
+					"text" : "button/#1"
 				}
 
 			}
@@ -452,10 +502,10 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1075", 0 ],
+					"destination" : [ "obj-76", 1 ],
 					"disabled" : 0,
-					"hidden" : 1,
-					"source" : [ "obj-14", 0 ]
+					"hidden" : 0,
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -506,10 +556,37 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-77", 0 ],
+					"destination" : [ "obj-76", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1075", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -528,6 +605,15 @@
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -631,23 +717,17 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-76", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-77", 0 ]
-				}
-
-			}
  ],
 		"parameters" : 		{
 			"obj-594" : [ "live.button[58]", "live.button", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "OSC-route.mxo",
-				"type" : "iLaX"
+				"name" : "combine.js",
+				"bootpath" : "/Users/terada/Documents/WORK/WORK2012/31-ALTOSC/MIDI Bridge/master",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
+				"implicit" : 1
 			}
  ]
 	}

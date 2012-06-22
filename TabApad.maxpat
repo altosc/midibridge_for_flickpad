@@ -64,7 +64,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 568.0, -51.0, 59.5, 20.0 ],
 					"text" : "autopattr",
-					"varname" : "u658003879"
+					"varname" : "u316006770"
 				}
 
 			}
@@ -106,7 +106,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/10" ],
+					"args" : [ 10 ],
 					"id" : "obj-687",
 					"maxclass" : "bpatcher",
 					"name" : "Apad.maxpat",
@@ -120,7 +120,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/9" ],
+					"args" : [ 9 ],
 					"id" : "obj-688",
 					"maxclass" : "bpatcher",
 					"name" : "Apad.maxpat",
@@ -134,7 +134,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/8" ],
+					"args" : [ 8 ],
 					"id" : "obj-689",
 					"maxclass" : "bpatcher",
 					"name" : "Apad.maxpat",
@@ -148,7 +148,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/7" ],
+					"args" : [ 7 ],
 					"id" : "obj-690",
 					"maxclass" : "bpatcher",
 					"name" : "Apad.maxpat",
@@ -162,7 +162,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/6" ],
+					"args" : [ 6 ],
 					"id" : "obj-691",
 					"maxclass" : "bpatcher",
 					"name" : "Apad.maxpat",
@@ -176,7 +176,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/5" ],
+					"args" : [ 5 ],
 					"id" : "obj-683",
 					"maxclass" : "bpatcher",
 					"name" : "Apad.maxpat",
@@ -190,7 +190,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/4" ],
+					"args" : [ 4 ],
 					"id" : "obj-681",
 					"maxclass" : "bpatcher",
 					"name" : "Apad.maxpat",
@@ -204,7 +204,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/3" ],
+					"args" : [ 3 ],
 					"id" : "obj-682",
 					"maxclass" : "bpatcher",
 					"name" : "Apad.maxpat",
@@ -218,7 +218,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/2" ],
+					"args" : [ 2 ],
 					"id" : "obj-678",
 					"maxclass" : "bpatcher",
 					"name" : "Apad.maxpat",
@@ -232,7 +232,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/1" ],
+					"args" : [ 1 ],
 					"id" : "obj-655",
 					"maxclass" : "bpatcher",
 					"name" : "Apad.maxpat",
@@ -683,68 +683,71 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-687::obj-435" : [ "live.button[7]", "live.button", 0 ],
-			"obj-689::obj-436" : [ "live.button[20]", "live.button", 0 ],
-			"obj-681::obj-436" : [ "live.button[40]", "live.button", 0 ],
-			"obj-682::obj-436" : [ "live.button[43]", "live.button", 0 ],
-			"obj-690::obj-436" : [ "live.button[25]", "live.button", 0 ],
-			"obj-678::obj-435" : [ "live.button[46]", "live.button", 0 ],
-			"obj-688::obj-437" : [ "live.button[11]", "live.button", 0 ],
-			"obj-691::obj-436" : [ "live.button[30]", "live.button", 0 ],
-			"obj-655::obj-437" : [ "live.button[51]", "live.button", 0 ],
-			"obj-683::obj-437" : [ "live.button[34]", "live.button", 0 ],
-			"obj-687::obj-436" : [ "live.button[8]", "live.button", 0 ],
-			"obj-689::obj-434" : [ "live.button[17]", "live.button", 0 ],
-			"obj-681::obj-434" : [ "live.button[38]", "live.button", 0 ],
-			"obj-682::obj-437" : [ "live.button[44]", "live.button", 0 ],
-			"obj-655::obj-436" : [ "live.button[53]", "live.button", 0 ],
-			"obj-690::obj-434" : [ "live.button[21]", "live.button", 0 ],
-			"obj-678::obj-436" : [ "live.button[47]", "live.button", 0 ],
-			"obj-688::obj-435" : [ "live.button[13]", "live.button", 0 ],
-			"obj-691::obj-433" : [ "live.button[26]", "live.button", 0 ],
-			"obj-655::obj-434" : [ "live.button[52]", "live.button", 0 ],
-			"obj-683::obj-433" : [ "live.button[35]", "live.button", 0 ],
-			"obj-687::obj-437" : [ "live.button[9]", "live.button", 0 ],
-			"obj-689::obj-437" : [ "live.button[19]", "live.button", 0 ],
-			"obj-681::obj-433" : [ "live.button[37]", "live.button", 0 ],
 			"obj-682::obj-434" : [ "live.button[45]", "live.button", 0 ],
-			"obj-655::obj-433" : [ "live.button[54]", "live.button", 0 ],
-			"obj-690::obj-437" : [ "live.button[23]", "live.button", 0 ],
-			"obj-678::obj-437" : [ "live.button[49]", "live.button", 0 ],
-			"obj-688::obj-433" : [ "live.button[12]", "live.button", 0 ],
-			"obj-691::obj-434" : [ "live.button[28]", "live.button", 0 ],
-			"obj-683::obj-434" : [ "live.button[32]", "live.button", 0 ],
-			"obj-655::obj-435" : [ "live.button[65]", "live.button", 0 ],
-			"obj-689::obj-433" : [ "live.button[16]", "live.button", 0 ],
-			"obj-681::obj-435" : [ "live.button[39]", "live.button", 0 ],
-			"obj-682::obj-433" : [ "live.button[41]", "live.button", 0 ],
-			"obj-690::obj-433" : [ "live.button[22]", "live.button", 0 ],
-			"obj-678::obj-434" : [ "live.button[50]", "live.button", 0 ],
-			"obj-687::obj-433" : [ "live.button[10]", "live.button", 0 ],
-			"obj-691::obj-437" : [ "live.button[29]", "live.button", 0 ],
-			"obj-688::obj-436" : [ "live.button[15]", "live.button", 0 ],
-			"obj-683::obj-435" : [ "live.button[31]", "live.button", 0 ],
-			"obj-687::obj-434" : [ "live.button[6]", "live.button", 0 ],
-			"obj-689::obj-435" : [ "live.button[18]", "live.button", 0 ],
-			"obj-681::obj-437" : [ "live.button[36]", "live.button", 0 ],
-			"obj-682::obj-435" : [ "live.button[42]", "live.button", 0 ],
-			"obj-690::obj-435" : [ "live.button[24]", "live.button", 0 ],
-			"obj-678::obj-433" : [ "live.button[48]", "live.button", 0 ],
 			"obj-691::obj-435" : [ "live.button[27]", "live.button", 0 ],
+			"obj-691::obj-437" : [ "live.button[29]", "live.button", 0 ],
+			"obj-687::obj-436" : [ "live.button[8]", "live.button", 0 ],
+			"obj-655::obj-435" : [ "live.button[65]", "live.button", 0 ],
+			"obj-681::obj-435" : [ "live.button[39]", "live.button", 0 ],
+			"obj-689::obj-436" : [ "live.button[20]", "live.button", 0 ],
+			"obj-689::obj-434" : [ "live.button[17]", "live.button", 0 ],
+			"obj-688::obj-437" : [ "live.button[11]", "live.button", 0 ],
+			"obj-682::obj-435" : [ "live.button[42]", "live.button", 0 ],
+			"obj-690::obj-437" : [ "live.button[23]", "live.button", 0 ],
+			"obj-687::obj-437" : [ "live.button[9]", "live.button", 0 ],
+			"obj-678::obj-437" : [ "live.button[49]", "live.button", 0 ],
+			"obj-678::obj-433" : [ "live.button[48]", "live.button", 0 ],
+			"obj-683::obj-437" : [ "live.button[34]", "live.button", 0 ],
+			"obj-655::obj-436" : [ "live.button[53]", "live.button", 0 ],
+			"obj-681::obj-436" : [ "live.button[40]", "live.button", 0 ],
+			"obj-689::obj-433" : [ "live.button[16]", "live.button", 0 ],
+			"obj-682::obj-436" : [ "live.button[43]", "live.button", 0 ],
+			"obj-690::obj-435" : [ "live.button[24]", "live.button", 0 ],
+			"obj-678::obj-434" : [ "live.button[50]", "live.button", 0 ],
+			"obj-678::obj-436" : [ "live.button[47]", "live.button", 0 ],
+			"obj-681::obj-437" : [ "live.button[36]", "live.button", 0 ],
+			"obj-683::obj-436" : [ "live.button[33]", "live.button", 0 ],
+			"obj-655::obj-433" : [ "live.button[54]", "live.button", 0 ],
+			"obj-681::obj-433" : [ "live.button[37]", "live.button", 0 ],
+			"obj-688::obj-436" : [ "live.button[15]", "live.button", 0 ],
+			"obj-682::obj-433" : [ "live.button[41]", "live.button", 0 ],
+			"obj-691::obj-434" : [ "live.button[28]", "live.button", 0 ],
+			"obj-690::obj-436" : [ "live.button[25]", "live.button", 0 ],
+			"obj-690::obj-433" : [ "live.button[22]", "live.button", 0 ],
+			"obj-678::obj-435" : [ "live.button[46]", "live.button", 0 ],
+			"obj-683::obj-433" : [ "live.button[35]", "live.button", 0 ],
+			"obj-683::obj-434" : [ "live.button[32]", "live.button", 0 ],
+			"obj-690::obj-434" : [ "live.button[21]", "live.button", 0 ],
+			"obj-655::obj-437" : [ "live.button[51]", "live.button", 0 ],
+			"obj-681::obj-434" : [ "live.button[38]", "live.button", 0 ],
 			"obj-688::obj-434" : [ "live.button[14]", "live.button", 0 ],
-			"obj-683::obj-436" : [ "live.button[33]", "live.button", 0 ]
+			"obj-687::obj-434" : [ "live.button[6]", "live.button", 0 ],
+			"obj-687::obj-433" : [ "live.button[10]", "live.button", 0 ],
+			"obj-682::obj-437" : [ "live.button[44]", "live.button", 0 ],
+			"obj-691::obj-433" : [ "live.button[26]", "live.button", 0 ],
+			"obj-691::obj-436" : [ "live.button[30]", "live.button", 0 ],
+			"obj-687::obj-435" : [ "live.button[7]", "live.button", 0 ],
+			"obj-683::obj-435" : [ "live.button[31]", "live.button", 0 ],
+			"obj-655::obj-434" : [ "live.button[52]", "live.button", 0 ],
+			"obj-689::obj-437" : [ "live.button[19]", "live.button", 0 ],
+			"obj-689::obj-435" : [ "live.button[18]", "live.button", 0 ],
+			"obj-688::obj-435" : [ "live.button[13]", "live.button", 0 ],
+			"obj-688::obj-433" : [ "live.button[12]", "live.button", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Apad.maxpat",
-				"bootpath" : "/Users/terada/Desktop/MIDI Bridge",
+				"bootpath" : "/Users/terada/Documents/WORK/WORK2012/31-ALTOSC/MIDI Bridge/master",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "OSC-route.mxo",
-				"type" : "iLaX"
+				"name" : "combine.js",
+				"bootpath" : "/Users/terada/Documents/WORK/WORK2012/31-ALTOSC/MIDI Bridge/master",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
+				"implicit" : 1
 			}
  ]
 	}

@@ -64,7 +64,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 573.5, -51.0, 59.5, 20.0 ],
 					"text" : "autopattr",
-					"varname" : "u860006067"
+					"varname" : "u836001550"
 				}
 
 			}
@@ -106,7 +106,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/5" ],
+					"args" : [ 5 ],
 					"id" : "obj-63",
 					"maxclass" : "bpatcher",
 					"name" : "Tgl.maxpat",
@@ -120,7 +120,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/4" ],
+					"args" : [ 4 ],
 					"id" : "obj-64",
 					"maxclass" : "bpatcher",
 					"name" : "Tgl.maxpat",
@@ -134,7 +134,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/3" ],
+					"args" : [ 3 ],
 					"id" : "obj-65",
 					"maxclass" : "bpatcher",
 					"name" : "Tgl.maxpat",
@@ -148,7 +148,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/2" ],
+					"args" : [ 2 ],
 					"id" : "obj-66",
 					"maxclass" : "bpatcher",
 					"name" : "Tgl.maxpat",
@@ -162,7 +162,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/1" ],
+					"args" : [ 1 ],
 					"clickthrough" : 1,
 					"id" : "obj-67",
 					"maxclass" : "bpatcher",
@@ -177,7 +177,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/10" ],
+					"args" : [ 10 ],
 					"id" : "obj-49",
 					"maxclass" : "bpatcher",
 					"name" : "Tgl.maxpat",
@@ -191,7 +191,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/9" ],
+					"args" : [ 9 ],
 					"id" : "obj-50",
 					"maxclass" : "bpatcher",
 					"name" : "Tgl.maxpat",
@@ -205,7 +205,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/8" ],
+					"args" : [ 8 ],
 					"id" : "obj-51",
 					"maxclass" : "bpatcher",
 					"name" : "Tgl.maxpat",
@@ -219,7 +219,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/7" ],
+					"args" : [ 7 ],
 					"id" : "obj-52",
 					"maxclass" : "bpatcher",
 					"name" : "Tgl.maxpat",
@@ -233,7 +233,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "/6" ],
+					"args" : [ 6 ],
 					"clickthrough" : 1,
 					"id" : "obj-53",
 					"maxclass" : "bpatcher",
@@ -686,16 +686,16 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-66::obj-594" : [ "live.button[59]", "live.button", 0 ],
-			"obj-52::obj-594" : [ "live.button[63]", "live.button", 0 ],
 			"obj-67::obj-594" : [ "live.button[57]", "live.button", 0 ],
 			"obj-49::obj-594" : [ "live.button[60]", "live.button", 0 ],
-			"obj-63::obj-594" : [ "live.button[58]", "live.button", 0 ],
-			"obj-53::obj-594" : [ "live.button[64]", "live.button", 0 ],
-			"obj-64::obj-594" : [ "live.button[55]", "live.button", 0 ],
 			"obj-50::obj-594" : [ "live.button[61]", "live.button", 0 ],
+			"obj-52::obj-594" : [ "live.button[63]", "live.button", 0 ],
+			"obj-51::obj-594" : [ "live.button[62]", "live.button", 0 ],
+			"obj-53::obj-594" : [ "live.button[64]", "live.button", 0 ],
+			"obj-63::obj-594" : [ "live.button[58]", "live.button", 0 ],
 			"obj-65::obj-594" : [ "live.button[56]", "live.button", 0 ],
-			"obj-51::obj-594" : [ "live.button[62]", "live.button", 0 ]
+			"obj-64::obj-594" : [ "live.button[55]", "live.button", 0 ],
+			"obj-66::obj-594" : [ "live.button[59]", "live.button", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -706,8 +706,11 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "OSC-route.mxo",
-				"type" : "iLaX"
+				"name" : "combine.js",
+				"bootpath" : "/Users/terada/Documents/WORK/WORK2012/31-ALTOSC/MIDI Bridge/master",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
+				"implicit" : 1
 			}
  ]
 	}

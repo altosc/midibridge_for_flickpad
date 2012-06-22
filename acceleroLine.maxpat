@@ -7,7 +7,7 @@
 			"revision" : 5
 		}
 ,
-		"rect" : [ 646.0, 103.0, 509.0, 649.0 ],
+		"rect" : [ 362.0, 430.0, 509.0, 649.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -30,12 +30,25 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 79.0, 80.0, 50.0, 18.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-8",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 380.0, 610.0, 108.0, 20.0 ],
-					"text" : "by KARAPPO Inc."
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 446.0, 82.0, 50.0, 18.0 ]
 				}
 
 			}
@@ -153,7 +166,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 60.0, 422.0, 46.0, 20.0 ],
+					"patching_rect" : [ 60.0, 425.0, 46.0, 20.0 ],
 					"text" : "line 0."
 				}
 
@@ -195,7 +208,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 60.0, 350.0, 106.0, 20.0 ],
+					"patching_rect" : [ 60.0, 347.0, 106.0, 20.0 ],
 					"text" : "unpack 0. 0."
 				}
 
@@ -334,6 +347,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-9", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -409,6 +431,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]

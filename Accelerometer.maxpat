@@ -90,7 +90,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u792006261"
+					"varname" : "u004007700"
 				}
 
 			}
@@ -389,9 +389,9 @@
 						"fontface" : 0,
 						"fontsize" : 12.0,
 						"tags" : "",
-						"globalpatchername" : "",
 						"default_fontface" : 0,
 						"digest" : "",
+						"globalpatchername" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
 						"default_fontsize" : 12.0,
@@ -613,9 +613,9 @@
 						"fontface" : 0,
 						"fontsize" : 12.0,
 						"tags" : "",
-						"globalpatchername" : "",
 						"default_fontface" : 0,
 						"digest" : "",
+						"globalpatchername" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
 						"default_fontsize" : 12.0,
@@ -871,11 +871,11 @@
 					"patching_rect" : [ 96.0, 39.0, 12.0, 12.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_mmax" : 1.0,
 							"parameter_type" : 2,
 							"parameter_shortname" : "live.button",
-							"parameter_longname" : "live.button[46]"
+							"parameter_longname" : "live.button[46]",
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -897,11 +897,11 @@
 					"patching_rect" : [ 96.0, 22.0, 12.0, 12.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_mmax" : 1.0,
 							"parameter_type" : 2,
 							"parameter_shortname" : "live.button",
-							"parameter_longname" : "live.button[47]"
+							"parameter_longname" : "live.button[47]",
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -923,11 +923,11 @@
 					"patching_rect" : [ 96.0, 6.0, 12.0, 12.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_mmax" : 1.0,
 							"parameter_type" : 2,
 							"parameter_shortname" : "live.button",
-							"parameter_longname" : "live.button[48]"
+							"parameter_longname" : "live.button[48]",
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -942,11 +942,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-77",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 113.0, -126.0, 194.0, 20.0 ],
-					"text" : "osc-route /ALTOSC/accelerometer"
+					"patching_rect" : [ 113.0, -119.5, 171.0, 20.0 ],
+					"text" : "route /ALTOSC/accelerometer"
 				}
 
 			}
@@ -1563,9 +1563,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1623" : [ "live.button[48]", "live.button", 0 ],
+			"obj-1621" : [ "live.button[46]", "live.button", 0 ],
 			"obj-1622" : [ "live.button[47]", "live.button", 0 ],
-			"obj-1621" : [ "live.button[46]", "live.button", 0 ]
+			"obj-1623" : [ "live.button[48]", "live.button", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1574,10 +1574,6 @@
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "OSC-route.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
