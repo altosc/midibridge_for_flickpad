@@ -7,7 +7,7 @@
 			"revision" : 5
 		}
 ,
-		"rect" : [ 1139.0, 379.0, 1189.0, 666.0 ],
+		"rect" : [ 1230.0, 408.0, 1189.0, 666.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -35,7 +35,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 447.0, -201.0, 25.0, 25.0 ]
+					"patching_rect" : [ 446.0, -201.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -77,20 +77,20 @@
 					"restore" : 					{
 						"ch_x" : [ 1 ],
 						"ch_y" : [ 1 ],
-						"ch_z" : [ 4 ],
+						"ch_z" : [ 1 ],
 						"live.button[91]" : [ 0.0 ],
 						"live.button[92]" : [ 0.0 ],
 						"live.button[93]" : [ 0.0 ],
 						"num_x" : [ 0 ],
 						"num_y" : [ 0 ],
-						"num_z" : [ 4 ],
+						"num_z" : [ 0 ],
 						"val_x" : [ 0 ],
 						"val_y" : [ 0 ],
-						"val_z" : [ 7 ]
+						"val_z" : [ 0 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u493001757"
+					"varname" : "u792006261"
 				}
 
 			}
@@ -176,7 +176,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"hidden" : 1,
 					"id" : "obj-1146",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -378,25 +377,25 @@
  ],
 						"dependency_cache" : [ 							{
 								"name" : "acceleroLine.maxpat",
-								"bootpath" : "/Users/terada/Desktop/MIDI Bridge",
+								"bootpath" : "/Users/terada/Documents/WORK/WORK2012/31-ALTOSC/MIDI Bridge/master",
 								"type" : "JSON",
 								"implicit" : 1
 							}
  ]
 					}
 ,
-					"patching_rect" : [ 47.0, -55.0, 140.0, 20.0 ],
+					"patching_rect" : [ 62.0, -51.0, 140.0, 20.0 ],
 					"saved_object_attributes" : 					{
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"tags" : "",
+						"globalpatchername" : "",
 						"default_fontface" : 0,
 						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
-						"tags" : "",
 						"default_fontsize" : 12.0,
-						"description" : "",
-						"globalpatchername" : "",
-						"fontface" : 0,
-						"fontsize" : 12.0
+						"description" : ""
 					}
 ,
 					"text" : "p acceleroLines"
@@ -407,7 +406,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"hidden" : 1,
 					"id" : "obj-1147",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -612,16 +610,16 @@
 ,
 					"patching_rect" : [ 206.75, -51.0, 99.0, 20.0 ],
 					"saved_object_attributes" : 					{
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"tags" : "",
+						"globalpatchername" : "",
 						"default_fontface" : 0,
 						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
-						"tags" : "",
 						"default_fontsize" : 12.0,
-						"description" : "",
-						"globalpatchername" : "",
-						"fontface" : 0,
-						"fontsize" : 12.0
+						"description" : ""
 					}
 ,
 					"text" : "p acceleroScale"
@@ -632,7 +630,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"hidden" : 1,
 					"id" : "obj-1598",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -647,7 +644,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"hidden" : 1,
 					"id" : "obj-1599",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -662,7 +658,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"hidden" : 1,
 					"id" : "obj-1600",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -708,7 +703,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 366.0, 36.0, 46.0, 20.0 ],
+					"patching_rect" : [ 332.0, 40.0, 46.0, 20.0 ],
 					"text" : "ctlout"
 				}
 
@@ -876,11 +871,11 @@
 					"patching_rect" : [ 96.0, 39.0, 12.0, 12.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_mmax" : 1.0,
 							"parameter_type" : 2,
 							"parameter_shortname" : "live.button",
-							"parameter_longname" : "live.button[46]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_mmax" : 1.0
+							"parameter_longname" : "live.button[46]"
 						}
 
 					}
@@ -902,11 +897,11 @@
 					"patching_rect" : [ 96.0, 22.0, 12.0, 12.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_mmax" : 1.0,
 							"parameter_type" : 2,
 							"parameter_shortname" : "live.button",
-							"parameter_longname" : "live.button[47]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_mmax" : 1.0
+							"parameter_longname" : "live.button[47]"
 						}
 
 					}
@@ -928,11 +923,11 @@
 					"patching_rect" : [ 96.0, 6.0, 12.0, 12.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_mmax" : 1.0,
 							"parameter_type" : 2,
 							"parameter_shortname" : "live.button",
-							"parameter_longname" : "live.button[48]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_mmax" : 1.0
+							"parameter_longname" : "live.button[48]"
 						}
 
 					}
@@ -962,7 +957,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 367.0, -157.0, 25.0, 25.0 ]
+					"patching_rect" : [ 366.0, -157.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -973,7 +968,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 305.0, -157.0, 25.0, 25.0 ]
+					"patching_rect" : [ 304.0, -157.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -997,20 +992,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 333.0, -201.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-401",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 145.5, -28.0, 45.0, 20.0 ],
-					"text" : "assign"
+					"patching_rect" : [ 332.0, -201.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -1033,7 +1015,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 276.0, -201.0, 25.0, 25.0 ]
+					"patching_rect" : [ 275.0, -201.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -1238,7 +1220,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -1493,7 +1475,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -1502,7 +1484,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -1511,7 +1493,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-77", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -1520,7 +1502,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1146", 2 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-4", 2 ]
 				}
 
@@ -1529,7 +1511,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1146", 1 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-4", 1 ]
 				}
 
@@ -1538,7 +1520,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1146", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -1565,7 +1547,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-77", 0 ]
 				}
 
@@ -1574,21 +1556,21 @@
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-77", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-1621" : [ "live.button[46]", "live.button", 0 ],
+			"obj-1623" : [ "live.button[48]", "live.button", 0 ],
 			"obj-1622" : [ "live.button[47]", "live.button", 0 ],
-			"obj-1623" : [ "live.button[48]", "live.button", 0 ]
+			"obj-1621" : [ "live.button[46]", "live.button", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "acceleroLine.maxpat",
-				"bootpath" : "/Users/terada/Desktop/MIDI Bridge",
+				"bootpath" : "/Users/terada/Documents/WORK/WORK2012/31-ALTOSC/MIDI Bridge/master",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
